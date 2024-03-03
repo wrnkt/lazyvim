@@ -27,6 +27,7 @@ return {
         "kotlin",
         "python",
         "go",
+        "haskell",
 
         -- scripting
         "bash",
@@ -82,5 +83,10 @@ return {
         }),
       })
     end,
+  },
+  {
+    "mrcjkb/haskell-tools.nvim",
+    version = "^3", -- Recommended
+    ft = { "haskell", "lhaskell", "cabal", "cabalproject" },
   },
 }
