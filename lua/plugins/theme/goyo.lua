@@ -3,6 +3,6 @@ return {
     -- distraction free writing
     "junegunn/goyo.vim",
     lazy = false,
-    enabled = false,
+    enabled = true,
   },
 }
