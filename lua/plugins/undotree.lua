@@ -4,7 +4,7 @@ return {
     lazy = false,
     keys = {
       {
-        "<leader>u",
+        "<leader>U",
         "<CMD>UndotreeToggle<CR>",
         "Toggle Undotree",
       },
