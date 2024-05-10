@@ -1,5 +1,6 @@
 return {
   {
+    -- simplifies UI, removes distractions
     "folke/zen-mode.nvim",
     dependencies = { "folke/twilight.nvim" },
     lazy = false,
@@ -26,9 +27,5 @@ return {
         tmux = { enabled = false },
       },
     },
-  },
-  {
-    lazy = false,
-    "junegunn/goyo.vim",
   },
 }
