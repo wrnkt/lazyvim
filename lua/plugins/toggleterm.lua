@@ -3,7 +3,7 @@ return {
     "akinsho/toggleterm.nvim",
     lazy = false,
     keys = {
-      { "<leader>co", "<cmd>ToggleTerm direction='horizontal' size=(vim.o.rows * 0.30)<CR>" },
+      { "<leader>co", "<cmd>ToggleTerm direction='horizontal' size=(vim.o.rows * 0.40)<CR>" },
     },
     opts = {
       open_mapping = [[<c-\]],
@@ -12,7 +12,7 @@ return {
       direction = "horizontal",
       size = function(term)
         if term.direction == "horizonal" then
-          return vim.o.rows * 0.30
+          return vim.o.rows * 0.40
         elseif term.direction == "version" then
           return vim.o.columns * 0.55
         elseif term.direction == "float" then
@@ -61,11 +61,11 @@ return {
         end,
       })
 
-      function _lazygit_toggle()
-        lazygit:toggle()
-      end
+      -- function _lazygit_toggle()
+      --   lazygit:toggle()
+      -- end
 
-      vim.api.nvim_set_keymap("n", "<leader>g", "<cmd>lua _lazygit_toggle()<CR>", { noremap = true, silent = true })
+      -- vim.api.nvim_set_keymap("n", "<leader>g", "<cmd>lua _lazygit_toggle()<CR>", { noremap = true, silent = true })
     end,
   },
 }
