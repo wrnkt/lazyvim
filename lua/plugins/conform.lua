@@ -10,10 +10,19 @@ return {
         },
         formatters_by_ft = {
           lua = { "stylua" },
-          fish = { "fish_indent" },
           sh = { "shfmt" },
+          bash = { "shfmt" },
           python = { "isort", "black" },
+          java = { "clang_format" },
+          go = { "gofmt" },
+          rust = { "rustfmt" },
           c = { "clang_format" },
+          cpp = { "clang_format" },
+          javascript = { "deno_fmt" },
+          typescript = { "deno_fmt" },
+          markdown = { "deno_fmt", "mdslw", "mdsf", "markdown-toc" },
+          yaml = { "yq" },
+          json = { "deno" },
           ["_"] = { "clang_format" }, -- if not, clang_format not work for .h file
         },
         -- LazyVim will merge the options you set here with builtin formatters.
