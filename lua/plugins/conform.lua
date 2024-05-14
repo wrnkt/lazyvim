@@ -16,7 +16,6 @@ return {
           java = { "clang_format" },
           go = { "gofmt" },
           rust = { "rustfmt" },
-          c = { "clang_format" },
           cpp = { "clang_format" },
           javascript = { "deno_fmt" },
           typescript = { "deno_fmt" },
