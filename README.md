@@ -48,6 +48,8 @@ fc-list | grep -i iosevka
 
 Then set it as your terminal's font.
 
+### Cpp Integration / LSP
+
 The [CMake](https://www.lazyvim.org/extras/lang/cmake) and
 [Clangd](https://www.lazyvim.org/extras/lang/clangd) extras you probably want to
 use should be active already (see `~/.config/nvim/lua/config/lazy.lua` line 22
