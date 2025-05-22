@@ -25,11 +25,11 @@ nvim
 
 ### Font Installation
 
-If you care you also need a patched system font to show LSP icons and stuff in
-the terminal. You can pull [this repo](https://github.com/ryanoasis/nerd-fonts)
-of patched fonts down and use the `./install.sh` script to install the fonts. Or
-you can patch a font of your choice with the new glyphs. I just use the already
-patched Iosevka.
+If you care, you also need a patched system font to show LSP icons, hints, and
+other stuff in the terminal. You can pull
+[this repo](https://github.com/ryanoasis/nerd-fonts) of patched fonts down and
+use the `./install.sh` script to install them. Or you can patch a font of your
+choice with the new glyphs. I just use the already patched Iosevka.
 
 ```sh
 # Get the font repo
@@ -48,14 +48,14 @@ fc-list | grep -i iosevka
 
 Then set it as your terminal's font.
 
-### Cpp Integration / LSP
+### C++ Integration / LSP
 
 The [CMake](https://www.lazyvim.org/extras/lang/cmake) and
 [Clangd](https://www.lazyvim.org/extras/lang/clangd) extras you probably want to
 use should be active already (see `~/.config/nvim/lua/config/lazy.lua` line 22
 and line 30).
 
-You’ll need to update `~/.config/nvim/lua/plugins/lsp.lua` with Cpp specific
+You’ll need to update `~/.config/nvim/lua/plugins/lsp.lua` with C++ specific
 config though. It should look something like this:
 
 ```lua
@@ -73,7 +73,7 @@ return {
 }
 ```
 
-When in a Cpp project you may need to generate a `compile_commands.json` with
+When in a C++ project you may need to generate a `compile_commands.json` with
 CMake for the LSP to work properly if the project root doesn’t have a `.git/`
 directory.
 
