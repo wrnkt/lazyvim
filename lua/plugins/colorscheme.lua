@@ -7,12 +7,43 @@ return {
     },
   },
   {
+    "blazkowolf/gruber-darker.nvim",
+    opts = {
+      bold = false,
+      invert = {
+        signs = true,
+        tabline = false,
+        visual = false,
+      },
+      italic = {
+        strings = true,
+        comments = true,
+        operators = false,
+        folds = true,
+      },
+      undercurl = true,
+      underline = true,
+    },
+  },
+  {
     "ellisonleao/gruvbox.nvim",
   },
   {
     "catppuccin/nvim",
     name = "catppuccin",
     priority = 1000,
+  },
+  {
+    "projekt0n/github-nvim-theme",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("github-theme").setup({
+        -- ...
+      })
+
+      vim.cmd("colorscheme github_dark_dimmed")
+    end,
   },
   {
     "Mofiqul/vscode.nvim",

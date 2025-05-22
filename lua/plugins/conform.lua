@@ -5,7 +5,7 @@ return {
       ---@class ConformOpts
       return {
         -- LazyVim will use these options when formatting with the conform.nvim formatter
-        format = {
+        default_format_opts = {
           timeout_ms = 1000,
         },
         formatters_by_ft = {
