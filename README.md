@@ -81,7 +81,6 @@ directory.
 cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -B build
 ```
 
-You also might need to install `clangd` if you don’t have it already. You can
-install it in nvim by running the command `:Mason` and picking `clangd`. Or you
-can just install with dnf, apt or whatever. As long as it’s on the PATH it
-should work.
+You also might need to install `clangd` if you don’t have it. You can install it
+in nvim by running the command `:Mason` and picking `clangd`. Or you can just
+install with dnf, apt or whatever. As long as it’s on the PATH it should work.
